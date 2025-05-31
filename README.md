@@ -2,13 +2,6 @@
 
 A CB Rádió érettségi feladatsor alapján megoldásra kerül 5 feladat, amelyekkel átismételjük az eddig tanult programozási algoritmusokat.
 
-## Tartalomjegyzék
-  ### [1. feladat](#Beolvasás)
-  ### [2. feladat](#decideFourBc())
-  ### [3. feladat](#nameInput())
-  ### [4. feladat](#mostBc())
-  ### [5. feladat](#differentDrivers())
-  
 ## 1. Beolvasás
   Olvasd be a cb.txt fájlban levő adatokat, és tárold el a további feladatok megoldására alkalmas adatszerkezetben!
   ```c#
