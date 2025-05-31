@@ -8,12 +8,12 @@ A CB Rádió érettségi feladatsor alapján megoldásra kerül 5 feladat, amely
   ### [3. feladat](#nameInput())
   ### [4. feladat](#mostBc())
   ### [5. feladat](#differentDrivers())
-
-## 1. Beolvasás:
+  
+## 1. Beolvasás
   Olvasd be a cb.txt fájlban levő adatokat, és tárold el a további feladatok megoldására alkalmas adatszerkezetben!
   ```c#
-   List<Adas> naplo = new List<Adas>();
- StreamReader sr = new StreamReader("cb.txt");
+ List<Adas> naplo = new List<Adas>();
+StreamReader sr = new StreamReader("cb.txt");
  sr.ReadLine(); 
  string line = string.Empty;
 
@@ -31,11 +31,12 @@ A CB Rádió érettségi feladatsor alapján megoldásra kerül 5 feladat, amely
 
   ```
 
-## 2. decideFourBc():
+## 2. decideFourBc()
   Döntsd el és írd ki a képernyőre, hogy található-e a naplóban olyan
   bejegyzés, amely szerint a sofőr egy percen belül pontosan 4 adást indított!
   
-    ```c#
+  ```c#
+    
      public static void decideFourBc(List<Adas> naplo)
     {
     Console.WriteLine("2. feladat:");
@@ -50,15 +51,16 @@ A CB Rádió érettségi feladatsor alapján megoldásra kerül 5 feladat, amely
     }
         Console.WriteLine(talalat ? "Volt négy adást indító sofőr." : "Nem volt négy adást indító sofőr.");
     }
-    ```
+    
+  ```
 
-## 3. nameInput():
+## 3. nameInput()
   Kérd be egy sofőr nevét, majd határozd meg a sofőr által indított hívások
   számát a napló bejegyzéseiből! Az eredményt a minta szerint írd ki a képernyőre! Ha olyan
   sofőr nevét adja meg a felhasználó, aki nem szerepel a naplóban, akkor a „Nincs ilyen nevű
   sofőr!” mondat jelenjen meg!
 
-    ```c#
+  ```c#
     public static void nameInput(List<Adas> naplo)
     {
         Console.WriteLine("3. feladat:");
@@ -86,13 +88,13 @@ A CB Rádió érettségi feladatsor alapján megoldásra kerül 5 feladat, amely
         }
     }
     
-    ```
+  ```
 
-## 4. mostBc():
+## 4. mostBc()
   Határozd meg a legtöbb adást indító sofőr nevét! A sofőr neve és az általa indított hívások
   száma jelenjen meg a képernyőn!
   
-    ```c#
+  ```c#
     public static void mostBc(List<Adas> naplo)
     {
         Console.WriteLine("4. feladat:");
@@ -115,13 +117,13 @@ A CB Rádió érettségi feladatsor alapján megoldásra kerül 5 feladat, amely
         }
         Console.WriteLine($"Legtöbb adást indító sofőr: {legaktivabb}, adások száma: {maxAdas}");
     }
-    ```
+  ```
 
-## 5. differentDrivers():
+## 5. differentDrivers()
   Határozd meg és írd ki a képernyőre a sofőrök számát a forrásállományban található
   becenevek alapján! Feltételezheti, hogy nincs két azonos becenév. 
 
-    ```c#
+  ```c#
     public static void differentDrivers(List<Adas> naplo)
     {
         Console.WriteLine("5. feladat:");
@@ -142,5 +144,5 @@ A CB Rádió érettségi feladatsor alapján megoldásra kerül 5 feladat, amely
         }
         Console.WriteLine($"Sofőrök száma: {egyediNevek.Count} fő");
     }
-    ```
+  ```
   
